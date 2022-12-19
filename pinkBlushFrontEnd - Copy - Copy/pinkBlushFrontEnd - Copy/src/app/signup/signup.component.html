@@ -1,0 +1,61 @@
+<!-- <h1>signup </h1>
+
+<mat-card>
+    
+    <form  (submit)="signup(loginForm)" #loginForm="ngForm" >
+      <mat-form-field>
+        <input matInput name="name" ngModel type="text"  placeholder="name" #nameInput="ngModel">
+        <mat-error *ngIf="nameInput.invalid">Please enter a valid name.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="contact" ngModel type="text"  placeholder="contact" #contactInput="ngModel">
+        <mat-error *ngIf="contactInput.invalid">Please enter a valid contact.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="email" ngModel type="text"  placeholder="email" #emailInput="ngModel">
+        <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+      </mat-form-field>
+   
+      <mat-form-field>
+        <input type="password" required password name="password" ngModel matInput placeholder="password" #passwordInput="ngModel">
+        <mat-error *ngIf="passwordInput.invalid">Please enter a valid password</mat-error>
+      </mat-form-field>
+      
+      <button mat-raised-button color="accent" type="submit" >Login</button>
+  
+    </form>
+  </mat-card> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <form onsubmit="event.preventDefault()" class="box" (submit)="signup(loginForm)" #loginForm="ngForm" >
+            <h1>Signup</h1>
+            <input type="text" required name="name" placeholder="name"  ngModel #nameInput="ngModel">
+            <input type="text" required contact name="contact" ngModel  placeholder="contact" #contactInput="ngModel">
+            <input type="text" required name="email" placeholder="email"  ngModel #emailInput="ngModel">
+            <input type="password" required password name="password" ngModel  placeholder="password" #passwordInput="ngModel">
+            <a class="forgot text-muted" href="#" routerLink="/login">Already Have an account? Login</a>
+            <input type="submit" name="" value="Signup" href="#">
+            <div class="col-md-12">
+              <ul class="social-network social-circle">
+                <li><a href="#" class="icoFacebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li><a href="#" class="icoTwitter" title="Twitter">
+                    <i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="icoGoogle" title="Google +">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

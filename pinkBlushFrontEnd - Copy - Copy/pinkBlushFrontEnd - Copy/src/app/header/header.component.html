@@ -1,0 +1,68 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3">
+                <div class="logo">
+                    <!-- <img src="../../assets/pic1 (1).jpg" alt="" class="image" > -->
+                    
+                </div>
+                <p class="sitename" id="glow">pinkBlush</p>
+            </div>
+            <div class="col-md-9 col-sm-9 col-9 text-end">
+                <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu" [class.menuClass]="menuVariable">
+                    <ul>
+                        <li>home</li>
+                        <li>makeup</li>
+                        <li>skincare</li>
+                        <li>combo</li>
+                        
+                        <!-- <li routerLink="/login">login</li>
+                        <li routerLink="/signup">signup</li> -->
+                        <!-- <li routerLink="/upload">upload</li> -->
+                        <!-- <li><i class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" class="fa fa-user" aria-hidden="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          
+                        </i>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                        </div></li> -->
+
+                              <li><div class="dropdown">
+                            <i class="fa fa-user" style="font-size:25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             
+                            </i>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" routerLink="/signup" >Signup</a>
+                              <a class="dropdown-item" routerLink="/login">Login</a>
+                              <a class="dropdown-item" routerLink="/myorder">My Orders</a>
+                              <a class="dropdown-item" routerLink="/upload">upload</a>
+                            </div>
+                          </div></li> 
+ <!-- <img src="https://thumbs.dreamstime.com/b/fashion-lady-shopping-28098705.jpg" alt="" class="image" > -->
+                          <i id="icon"
+                          class='fas fa-cart-plus' style='font-size:36px;color:#AA336A' routerLink="/cart"></i>
+                          <div style="font-size: 20px" class="badge bg-danger">{{totalitems}}</div>
+
+                        <!-- <i id="icon"
+                        class='fas fa-cart-plus' style='font-size:36px;color:#AA336A' routerLink="/cart"></i>
+                        <div style="font-size: 10px" class="badge bg-danger">{{totalitem}}</div> -->
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+

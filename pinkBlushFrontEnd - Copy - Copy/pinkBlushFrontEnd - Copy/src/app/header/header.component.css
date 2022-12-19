@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+header{
+    padding: 12px 0;
+    background-color: #222;
+}
+#demo{
+    height: 50%;
+}
+.logo{
+    width:10px;
+    height:10px;
+}
+.image{
+    width:60px;
+    border-radius: 50%;
+}
+
+.sitename{
+    color: pink;
+    margin-left: 10px;
+    font-family: kalam;
+    font-size: 40px;
+    font-weight: 900;
+}
+#icon{
+  margin-left: 10%;
+}
+#glow {
+    /* font-size: 80px; */
+    color: #fff;
+    /* text-align: center; */
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+.menu{
+margin-top: 12px;
+}
+.menu u{
+    padding: 0;
+    margin: 0;
+
+}
+.menu ul li{
+    list-style-type: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-family: kalam;
+    margin-left: 30px;
+    
+}
+.menu ul li:hover{
+    color: rgb(244, 111, 180);
+    cursor:pointer;
+    transition:0.4s ease-in-out
+  
+}
+@media only screen and (max-width: 700px) {
+   .menu{
+    position: fixed;
+    right: -280px;
+    top:20px;
+    width: 280px;
+    height: 100%;
+    background: #222;
+   }
+   .menu ul li{
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 10px 26px;
+    border-bottom: 1px solid #312f2f;
+   }
+   .menu_icon{
+    display: inline-block;
+    position: relative;
+    right:0;
+    top: 9px;
+}
+   .menu_icon span{
+    width: 32px;
+    height:3px ;
+    background: white;
+    display: block;
+    transition:0.4s ease-in-out
+   }
+   .menu_icon span:nth-child(2){
+    margin: 11px 0;
+   }
+   .menu_icon_Class span:nth-child(2){
+    display: none;
+   }
+   .menu_icon_Class span:nth-child(1){
+    transform:rotate(40deg);
+   }
+   .menu_icon_Class span:nth-child(3){
+    transform:rotate(-40deg);
+    margin-top: -3px;
+   }
+.menuClass{
+   right: 0; 
+   transition:0.4s ease-in-out
+}
+  }
+  
